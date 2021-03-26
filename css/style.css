@@ -470,11 +470,11 @@ body.lock {
 }
 .category-slider::after {
   right: -25px;
-  background-image: url("/svg/arrow-right.svg");
+  background-image: url("../svg/arrow-right.svg");
 }
 .category-slider::before {
   left: -25px;
-  background-image: url("/svg/arrow-left.svg");
+  background-image: url("../svg/arrow-left.svg");
 }
 .category-slider__item {
   position: relative;
@@ -602,7 +602,7 @@ body.lock {
   transform: translateY(-50%);
   width: 16px;
   height: 10px;
-  background-image: url("/svg/arrow-sidebar.svg");
+  background-image: url("../svg/arrow-sidebar.svg");
   background-repeat: no-repeat;
 }
 
