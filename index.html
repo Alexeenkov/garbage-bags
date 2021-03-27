@@ -10,9 +10,10 @@
     <link rel="preload" href="fonts/City-Nova-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/TrajanPro-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/Ustroke-regular.woff2" as="font" type="font/woff2" crossorigin> -->
-    <!-- Подключение файлов CSS -->
+    <!--! Подключение файлов CSS -->
     <!-- <link rel="stylesheet" href="css/swiper-bundle.min.css"> -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <title>Мешки для мусора</title>
 </head>
 
@@ -48,6 +49,9 @@
             </div>
             <nav class="header__menu menu">
                 <div class="menu__wrapper">
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
                     <ul class="menu__list">
                         <li class="menu__item">
                             <a href="#0" class="menu__link">О компании</a>
@@ -131,26 +135,41 @@
             </ul>
         </div>
         <h2 class="category-title category-title_indent">Мешки для мусора 480 литров</h2>
-        <ul class="category-slider category-slider_indent">
-            <li class="category-slider__item">
-                <a href="#0" class="category-slider__link">Название 1</a>
-            </li>
-            <li class="category-slider__item">
-                <a href="#0" class="category-slider__link">Название 2</a>
-            </li>
-            <li class="category-slider__item">
-                <a href="#0" class="category-slider__link">Название 3</a>
-            </li>
-            <li class="category-slider__item">
-                <a href="#0" class="category-slider__link">Название 4</a>
-            </li>
-            <li class="category-slider__item">
-                <a href="#0" class="category-slider__link">Название 5</a>
-            </li>
-            <li class="category-slider__item">
-                <a href="#0" class="category-slider__link">Название 6</a>
-            </li>
-        </ul>
+        <div class="slider-wrapper">
+            <div class="swiper-container slider category-slider_indent">
+                <div class="category-slider swiper-wrapper">
+                    <section class="category-slider__item swiper-slide">
+                        <a href="#0" class="category-slider__link">Название 1</a>
+                    </section>
+                    <section class="category-slider__item swiper-slide">
+                        <a href="#0" class="category-slider__link">Название 2</a>
+                    </section>
+                    <section class="category-slider__item swiper-slide">
+                        <a href="#0" class="category-slider__link">Название 3</a>
+                    </section>
+                    <section class="category-slider__item swiper-slide">
+                        <a href="#0" class="category-slider__link">Название 4</a>
+                    </section>
+                    <section class="category-slider__item swiper-slide">
+                        <a href="#0" class="category-slider__link">Название 5</a>
+                    </section>
+                    <section class="category-slider__item swiper-slide">
+                        <a href="#0" class="category-slider__link">Название 6</a>
+                    </section>
+                    <section class="category-slider__item swiper-slide">
+                        <a href="#0" class="category-slider__link">Название 7</a>
+                    </section>
+                    <section class="category-slider__item swiper-slide">
+                        <a href="#0" class="category-slider__link">Название 8</a>
+                    </section>
+                    <section class="category-slider__item swiper-slide">
+                        <a href="#0" class="category-slider__link">Название 9</a>
+                    </section>
+                </div>
+            </div>
+            <div class="category-slider__next"></div>
+            <div class="category-slider__prev"></div>
+        </div>
         <div class="main">
             <aside class="filter">
                 <section class="filter__container">
@@ -191,7 +210,14 @@
                                 <input type="number" name="" id="" class="price__input">
                                 <input type="number" name="" id="" class="price__input">
                             </div>
-                            <input type="range" name="" id="" class="price__range">
+                            <div class="filter__range">
+                                <div class="filter__range-left"></div>
+                                <div class="filter__range-right"></div>
+                            </div>
+                            <div class="filter__value-range">
+                                <div class="filter__value-range-left">0</div>
+                                <div class="filter__value-range-right">500</div>
+                            </div>
                         </li>
                         <li class="filter__category">
                             <a href="#0">Объём, л</a>
@@ -276,9 +302,18 @@
                 </section>
             </aside>
             <main class="product">
+                <article class="product__filter">
+                    <div class="product__filter-text">Фильтр</div>
+                    <div class="product__filter-icon">
+                        <img src="svg/filter.svg" alt="Фильтр по товарам">
+                    </div>
+                </article>
                 <article class="product__sort sort">
                     <div class="sort__type">
-                        <span>Сортировать по:</span> <a href="#0">наименованию</a> <a href="#0">новинкам</a> <a href="#0">цене</a>
+                        <span>Сортировать по:</span>
+                        <a href="#0">наименованию</a>
+                        <a href="#0">новинкам</a>
+                        <a href="#0">цене</a>
                     </div>
                     <div class="sort__show">
                         <span>Выводить по</span> <input type="number" value="30"> элементов
@@ -1100,26 +1135,41 @@
         </div>
     </div>
     <div class="slider-block">
-        <ul class="category-slider">
-            <li class="category-slider__item">
-                <a href="#0" class="category-slider__link">Название 1</a>
-            </li>
-            <li class="category-slider__item">
-                <a href="#0" class="category-slider__link">Название 2</a>
-            </li>
-            <li class="category-slider__item">
-                <a href="#0" class="category-slider__link">Название 3</a>
-            </li>
-            <li class="category-slider__item">
-                <a href="#0" class="category-slider__link">Название 4</a>
-            </li>
-            <li class="category-slider__item">
-                <a href="#0" class="category-slider__link">Название 5</a>
-            </li>
-            <li class="category-slider__item">
-                <a href="#0" class="category-slider__link">Название 6</a>
-            </li>
-        </ul>
+        <div class="slider-wrapper slider-wrapper_width">
+            <div class="swiper-container slider">
+                <div class="category-slider swiper-wrapper">
+                    <section class="category-slider__item swiper-slide">
+                        <a href="#0" class="category-slider__link">Название 1</a>
+                    </section>
+                    <section class="category-slider__item swiper-slide">
+                        <a href="#0" class="category-slider__link">Название 2</a>
+                    </section>
+                    <section class="category-slider__item swiper-slide">
+                        <a href="#0" class="category-slider__link">Название 3</a>
+                    </section>
+                    <section class="category-slider__item swiper-slide">
+                        <a href="#0" class="category-slider__link">Название 4</a>
+                    </section>
+                    <section class="category-slider__item swiper-slide">
+                        <a href="#0" class="category-slider__link">Название 5</a>
+                    </section>
+                    <section class="category-slider__item swiper-slide">
+                        <a href="#0" class="category-slider__link">Название 6</a>
+                    </section>
+                    <section class="category-slider__item swiper-slide">
+                        <a href="#0" class="category-slider__link">Название 7</a>
+                    </section>
+                    <section class="category-slider__item swiper-slide">
+                        <a href="#0" class="category-slider__link">Название 8</a>
+                    </section>
+                    <section class="category-slider__item swiper-slide">
+                        <a href="#0" class="category-slider__link">Название 9</a>
+                    </section>
+                </div>
+            </div>
+            <div class="category-slider__next"></div>
+            <div class="category-slider__prev"></div>
+        </div>
     </div>
     <div class="description">
         <p>Мусорные мешки из полиэтилена собственного изготовления от производителя теперь доступны к заказу напрямую по оптовым ценам. Независимо от состава заказа вы можете получить выгодное предложение от менеджеров, обратившись в отдел продаж.</p>
@@ -1160,6 +1210,7 @@
             </nav>
             <div class="footer__container">
                 <div class="footer__timetable">
+                    <div class="footer__address footer__address_mobile">Россия, г. Москва ул. Первая 99 к5</div>
                     <a href="tel:88001118899" class="footer__tel">8(800)111-88-99</a>
                     <div class="footer__time time">
                         <div class="time__title">График</div>
@@ -1215,16 +1266,48 @@
 				@ ТОВ ОМСК ПАК производитель пластиковой продукции
 			</a>
         </div>
+        <ul class="footer__socials footer__socials_mobile">
+            <li class="footer__socials-item">
+                <a href="#0" class="footer__socials-link footer__viber">
+                    <span class="visually-hidden">Viber</span>
+                </a>
+            </li>
+            <li class="footer__socials-item">
+                <a href="#0" class="footer__socials-link footer__whatsapp">
+                    <span class="visually-hidden">Whatsapp</span>
+                </a>
+            </li>
+            <li class="footer__socials-item">
+                <a href="#0" class="footer__socials-link footer__instagram">
+                    <span class="visually-hidden">Instagram</span>
+                </a>
+            </li>
+            <li class="footer__socials-item">
+                <a href="#0" class="footer__socials-link footer__facebook">
+                    <span class="visually-hidden">Facebook</span>
+                </a>
+            </li>
+            <li class="footer__socials-item">
+                <a href="#0" class="footer__socials-link footer__vkontakte">
+                    <span class="visually-hidden">Vkontakte</span>
+                </a>
+            </li>
+            <li class="footer__socials-item">
+                <a href="#0" class="footer__socials-link footer__odnoklassniki">
+                    <span class="visually-hidden">Odnoklassniki</span>
+                </a>
+            </li>
+        </ul>
     </footer>
 
 
 
 
 
-    <!-- Подключаем jQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-    <!-- Подключаем файл JS скриптов -->
-    <script src="js/script.js"></script>
+    <!-- Подключаем Swiper -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/sliders.js"></script>
+
 </body>
 
 </html>
