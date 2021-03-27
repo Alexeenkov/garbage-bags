@@ -1,0 +1,260 @@
+.header {
+    background-image: url('../img/product_header-bg.jpg');
+    background-position: top center;
+    background-size: cover;
+}
+
+.detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+.detail__image {
+    width: 38.55%;
+    padding: 43px 74px;
+    border: 1px solid #148342;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.detail__image img {
+    max-width: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+.detail__description {
+    width: 32.51%;
+}
+
+.detail__rating {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.detail__rating img {
+    margin-right: 15px;
+}
+
+.detail__rating a {
+    color: #5786B5;
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.detail__status {
+    margin: 13px 0;
+    font-weight: 500;
+    font-size: 18px;
+    color: #148342;
+}
+
+.detail__properties {
+    font-size: 16px;
+}
+
+.detail__property {
+    display: flex;
+}
+
+.detail__property div:first-child {
+    width: 209px;
+    padding: 12px 10px;
+}
+
+.detail__property div:last-child {
+    padding: 12px 8px;
+}
+
+.detail__property:nth-child(2n+1) {
+    background-color: #ECEFED;
+}
+
+.detail__more {
+    display: block;
+    color: #5786B5;
+    text-decoration: underline;
+    padding-left: 10px;
+    margin-top: 18px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.detail__choice {
+    width: 22.64%;
+}
+
+.choice {
+    padding: 65px 26px 68px 26px;
+    background-color: #ECEFED;
+}
+
+.choice__price {
+    position: relative;
+    font-size: 24px;
+}
+
+.choice__price div {
+    position: absolute;
+    top: -18px;
+    left: 0px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.choice__price span {
+    font-size: 36px;
+    font-weight: 900;
+    color: #148342;
+    padding-left: 13px;
+}
+
+.choice__count {
+    position: relative;
+    margin-top: 53px;
+}
+
+.choice__count span {
+    position: absolute;
+    top: -28px;
+    left: 0;
+    font-size: 14px;
+}
+
+.card__count_choice {
+    width: 164px;
+}
+
+.card__minus_choice {
+    width: 26px;
+    padding: 12px 0;
+    height: 40px;
+}
+
+.card__total-count_choice {
+    height: 40px;
+    width: 109px;
+    font-size: 24px;
+}
+
+.card__plus_choice {
+    width: 26px;
+    padding: 12px 0;
+    height: 40px;
+}
+
+.choice__summ {
+    position: relative;
+    font-size: 24px;
+    margin-top: 53px;
+    padding-left: 13px;
+}
+
+.choice__summ div {
+    position: absolute;
+    top: -18px;
+    left: 0;
+    font-size: 14px;
+}
+
+.choice__summ span {
+    font-size: 36px;
+    font-weight: 900;
+    color: #148342;
+}
+
+.button {
+    color: #fff;
+}
+
+.choice__button {
+    padding: 11px 46px;
+    font-size: 12px;
+    margin-top: 24px;
+}
+
+.card:nth-child(4) {
+    margin-top: 0;
+}
+
+.main__name {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 36px;
+    color: #148342;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.main__name_indent {
+    margin-bottom: 60px;
+}
+
+.table {
+    margin-top: 70px;
+    margin-bottom: 46px;
+    display: flex;
+    border: 1px solid #4F5662;
+    font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+.table__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 72px;
+}
+
+.table__section:nth-child(n+2) {
+    border-left: 1px solid #4F5662;
+}
+
+.table__section_active {
+    background-color: #148342;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.specification {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 18px;
+    line-height: 1.67;
+    margin-bottom: 142px;
+}
+
+.specification__list {
+    margin-top: 42px;
+}
+
+.specification__item {}
+
+.main {
+    flex-direction: column;
+}
+
+.product_indent {
+    margin-top: 83px;
+}
+
+.footer_indent {
+    margin-top: 250px;
+}
+
+@media (max-width: 1195px) {
+    .card:nth-child(3) {
+        margin-top: 0;
+    }
+    .card:nth-child(4) {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 920px) {
+    .card:nth-child(3) {
+        margin-top: 30px;
+    }
+}

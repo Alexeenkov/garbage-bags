@@ -892,6 +892,9 @@ body.lock {
         color: #148342;
         font-weight: 500;
         font-size: 18px;
+        &:hover {
+            text-decoration: underline;
+        }
     }
     &__description {
         margin-top: 10px;
