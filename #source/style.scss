@@ -1,8 +1,8 @@
 /* ! ------------------------fonts-------------------- */
 
 @font-face {
-    font-family: 'Museo Sans Cyrl 500';
-    src: url('MuseoSansCyrl-500.woff2') format('woff2'), url('MuseoSansCyrl-500.woff') format('woff'), url('MuseoSansCyrl-500.ttf') format('truetype');
+    font-family: 'Museo Sans Cyrl';
+    src: url('../fonts/MuseoSansCyrl-500.woff2') format('woff2'), url('../fonts/MuseoSansCyrl-500.woff') format('woff'), url('../fonts/MuseoSansCyrl-500.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -657,9 +657,21 @@ body.lock {
         }
     }
     &__button {
+        position: relative;
+        top: 0;
         color: #fff;
         font-size: 14px;
-        padding: 18px 29px;
+        padding: 18px 28px;
+        transition: all .3s ease;
+        &:hover {
+            top: -2px;
+        }
+        &:active {
+            top: 0;
+        }
+        &:focus {
+            outline: none;
+        }
     }
     &__button-reset {
         text-transform: uppercase;
@@ -667,6 +679,13 @@ body.lock {
         font-weight: 900;
         font-size: 14px;
         color: #4F5662;
+        transition: all .3s ease;
+        &:hover {
+            color: rgba(255, 0, 0, 0.7);
+        }
+        &:focus {
+            outline: none;
+        }
     }
     &__button-box {
         display: flex;
@@ -768,12 +787,14 @@ body.lock {
         margin-top: 31px;
     }
     &__page {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 28px;
-        height: 39px;
         background-color: #F1F1F1;
+        & a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 28px;
+            height: 39px;
+        }
         &:nth-child(n+2) {
             margin-left: 10px;
         }
@@ -894,7 +915,7 @@ body.lock {
         position: relative;
         font-weight: 500;
         font-size: 18px;
-        margin-right: 14px;
+        margin-right: 10px;
         & span {
             font-weight: 900;
         }
@@ -907,9 +928,22 @@ body.lock {
         font-size: 12px;
     }
     &__button {
+        position: relative;
+        top: 0;
         font-size: 12px;
         color: #fff;
+        font-weight: 700;
         padding: 13px 29px;
+        transition: all .3s ease;
+        &:hover {
+            top: -2px;
+        }
+        &:active {
+            top: 0;
+        }
+        &:focus {
+            outline: none;
+        }
     }
 }
 
@@ -929,4 +963,167 @@ body.lock {
     font-size: 20px;
     line-height: 1.25;
     text-align: justify;
+}
+
+.footer {
+    background-color: #4F5662;
+    color: #fff;
+    &__wrapper {
+        display: flex;
+        max-width: 1205px;
+        padding: 33px 15px 0 15px;
+        margin: 0 auto;
+        font-family: 'Roboto', 'Arial', sans-serif;
+    }
+    &__container {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__menu {
+        display: flex;
+        width: 50%;
+        font-weight: 700;
+        font-size: 16px;
+    }
+    &__menu-list {
+        &:nth-child(n+2) {
+            margin-left: 26.74%;
+        }
+    }
+    &__menu-item {
+        &:nth-child(n+2) {
+            margin-top: 12px;
+        }
+    }
+    &__menu-link {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__timetable {
+        width: 240px;
+        padding-left: 34px;
+        & p:nth-child(1) {
+            position: relative;
+        }
+        & p:nth-child(1)::before {
+            content: '';
+            position: absolute;
+            top: -4px;
+            left: -29px;
+            width: 22px;
+            height: 22px;
+            background-image: url('../svg/clock.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+    &__tel {
+        position: relative;
+        font-weight: 700;
+        font-size: 24px;
+        &:hover {
+            text-decoration: underline;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -40px;
+            width: 34px;
+            height: 34px;
+            background-image: url('../svg/telephone.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+    &__time {
+        margin-top: 29px;
+    }
+    &__address-container {}
+    &__address {
+        width: 258px;
+        font-size: 18px;
+        font-style: normal;
+    }
+    &__socials {
+        width: 104px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 15px;
+    }
+    &__socials-item {
+        &:nth-child(3n+2) {
+            margin-left: 14px;
+        }
+        &:nth-child(3n+3) {
+            margin-left: 14px;
+        }
+        &:nth-child(n+4) {
+            margin-top: 11px;
+        }
+    }
+    &__socials-link {
+        display: block;
+        width: 25px;
+        height: 25px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: all .3s ease;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+    &__viber {
+        background-image: url('../svg/viber-footer.svg');
+    }
+    &__whatsapp {
+        background-image: url('../svg/whatsapp-footer.svg');
+    }
+    &__instagram {
+        background-image: url('../svg/instagram-footer.svg');
+    }
+    &__facebook {
+        background-image: url('../svg/facebook-footer.svg');
+    }
+    &__vkontakte {
+        background-image: url('../svg/vk-footer.svg');
+    }
+    &__odnoklassniki {
+        background-image: url('../svg/odnoklassniki-footer.svg');
+    }
+    &__copyright-container {
+        display: flex;
+        align-items: flex-end;
+        max-width: 1205px;
+        padding: 0 15px 14px 15px;
+        margin: 0 auto;
+    }
+    &__logo {
+        margin-left: 8px;
+    }
+    &__copyright {
+        font-family: 'Museo Sans Cyrl', 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+        margin-left: 104px;
+        padding-bottom: 28px;
+        font-size: 16px;
+    }
+}
+
+.time {
+    &__title {
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    &__timetable {
+        font-size: 13px;
+        & span {
+            font-weight: 700;
+        }
+        & p:nth-child(n+2) {
+            margin-top: 14px;
+        }
+    }
 }

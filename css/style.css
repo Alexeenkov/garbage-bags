@@ -2,8 +2,8 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,regular,500,700,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Lora:italic,500italic&display=swap");
 @font-face {
-  font-family: "Museo Sans Cyrl 500";
-  src: url("MuseoSansCyrl-500.woff2") format("woff2"), url("MuseoSansCyrl-500.woff") format("woff"), url("MuseoSansCyrl-500.ttf") format("truetype");
+  font-family: "Museo Sans Cyrl";
+  src: url("../fonts/MuseoSansCyrl-500.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-500.woff") format("woff"), url("../fonts/MuseoSansCyrl-500.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -611,9 +611,21 @@ body.lock {
   background-repeat: no-repeat;
 }
 .filter__button {
+  position: relative;
+  top: 0;
   color: #fff;
   font-size: 14px;
-  padding: 18px 29px;
+  padding: 18px 28px;
+  transition: all 0.3s ease;
+}
+.filter__button:hover {
+  top: -2px;
+}
+.filter__button:active {
+  top: 0;
+}
+.filter__button:focus {
+  outline: none;
 }
 .filter__button-reset {
   text-transform: uppercase;
@@ -621,6 +633,13 @@ body.lock {
   font-weight: 900;
   font-size: 14px;
   color: #4F5662;
+  transition: all 0.3s ease;
+}
+.filter__button-reset:hover {
+  color: rgba(255, 0, 0, 0.7);
+}
+.filter__button-reset:focus {
+  outline: none;
 }
 .filter__button-box {
   display: flex;
@@ -718,12 +737,14 @@ body.lock {
   margin-top: 31px;
 }
 .product__page {
+  background-color: #F1F1F1;
+}
+.product__page a {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 28px;
   height: 39px;
-  background-color: #F1F1F1;
 }
 .product__page:nth-child(n+2) {
   margin-left: 10px;
@@ -841,7 +862,7 @@ body.lock {
   position: relative;
   font-weight: 500;
   font-size: 18px;
-  margin-right: 14px;
+  margin-right: 10px;
 }
 .card__price-total span {
   font-weight: 900;
@@ -854,9 +875,22 @@ body.lock {
   font-size: 12px;
 }
 .card__button {
+  position: relative;
+  top: 0;
   font-size: 12px;
   color: #fff;
+  font-weight: 700;
   padding: 13px 29px;
+  transition: all 0.3s ease;
+}
+.card__button:hover {
+  top: -2px;
+}
+.card__button:active {
+  top: 0;
+}
+.card__button:focus {
+  outline: none;
 }
 
 .slider-block {
@@ -875,4 +909,156 @@ body.lock {
   font-size: 20px;
   line-height: 1.25;
   text-align: justify;
+}
+
+.footer {
+  background-color: #4F5662;
+  color: #fff;
+}
+.footer__wrapper {
+  display: flex;
+  max-width: 1205px;
+  padding: 33px 15px 0 15px;
+  margin: 0 auto;
+  font-family: "Roboto", "Arial", sans-serif;
+}
+.footer__container {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__menu {
+  display: flex;
+  width: 50%;
+  font-weight: 700;
+  font-size: 16px;
+}
+.footer__menu-list:nth-child(n+2) {
+  margin-left: 26.74%;
+}
+.footer__menu-item:nth-child(n+2) {
+  margin-top: 12px;
+}
+.footer__menu-link:hover {
+  text-decoration: underline;
+}
+.footer__timetable {
+  width: 240px;
+  padding-left: 34px;
+}
+.footer__timetable p:nth-child(1) {
+  position: relative;
+}
+.footer__timetable p:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -29px;
+  width: 22px;
+  height: 22px;
+  background-image: url("../svg/clock.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.footer__tel {
+  position: relative;
+  font-weight: 700;
+  font-size: 24px;
+}
+.footer__tel:hover {
+  text-decoration: underline;
+}
+.footer__tel::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -40px;
+  width: 34px;
+  height: 34px;
+  background-image: url("../svg/telephone.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.footer__time {
+  margin-top: 29px;
+}
+.footer__address {
+  width: 258px;
+  font-size: 18px;
+  font-style: normal;
+}
+.footer__socials {
+  width: 104px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+.footer__socials-item:nth-child(3n+2) {
+  margin-left: 14px;
+}
+.footer__socials-item:nth-child(3n+3) {
+  margin-left: 14px;
+}
+.footer__socials-item:nth-child(n+4) {
+  margin-top: 11px;
+}
+.footer__socials-link {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease;
+}
+.footer__socials-link:hover {
+  transform: scale(1.2);
+}
+.footer__viber {
+  background-image: url("../svg/viber-footer.svg");
+}
+.footer__whatsapp {
+  background-image: url("../svg/whatsapp-footer.svg");
+}
+.footer__instagram {
+  background-image: url("../svg/instagram-footer.svg");
+}
+.footer__facebook {
+  background-image: url("../svg/facebook-footer.svg");
+}
+.footer__vkontakte {
+  background-image: url("../svg/vk-footer.svg");
+}
+.footer__odnoklassniki {
+  background-image: url("../svg/odnoklassniki-footer.svg");
+}
+.footer__copyright-container {
+  display: flex;
+  align-items: flex-end;
+  max-width: 1205px;
+  padding: 0 15px 14px 15px;
+  margin: 0 auto;
+}
+.footer__logo {
+  margin-left: 8px;
+}
+.footer__copyright {
+  font-family: "Museo Sans Cyrl", "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS", sans-serif;
+  margin-left: 104px;
+  padding-bottom: 28px;
+  font-size: 16px;
+}
+
+.time__title {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.time__timetable {
+  font-size: 13px;
+}
+.time__timetable span {
+  font-weight: 700;
+}
+.time__timetable p:nth-child(n+2) {
+  margin-top: 14px;
 }
