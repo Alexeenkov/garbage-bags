@@ -774,7 +774,6 @@ body.lock {
 .product__cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 .product__card {
   width: 268px;
@@ -815,6 +814,10 @@ body.lock {
   border: 1px solid #148342;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   font-family: "Roboto", "Arial", sans-serif;
+}
+.card:nth-child(3n+2) {
+  margin-left: 33px;
+  margin-right: 33px;
 }
 .card:nth-child(n+4) {
   margin-top: 30px;
@@ -1125,7 +1128,7 @@ body.lock {
   margin-top: 14px;
 }
 
-@media (max-width: 1195px) {
+@media (max-width: 1217px) {
   .screen {
     max-height: 990px;
   }
@@ -1173,6 +1176,17 @@ body.lock {
     top: -4px;
   }
 
+  .card:nth-child(3n+2) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .card:nth-child(2n+2) {
+    margin-left: 33px;
+  }
+  .card:nth-child(n+3) {
+    margin-top: 30px;
+  }
+
   .wrapper {
     max-width: 900px;
   }
@@ -1183,10 +1197,6 @@ body.lock {
 
   .slider-wrapper_width {
     max-width: 850px;
-  }
-
-  .card:nth-child(n+3) {
-    margin-top: 30px;
   }
 
   .footer__menu {
@@ -1320,7 +1330,7 @@ body.lock {
     margin-left: 10px;
   }
 }
-@media (max-width: 610px) {
+@media (max-width: 615px) {
   .screen {
     min-height: 806px;
   }
@@ -1555,6 +1565,9 @@ body.lock {
     display: none;
   }
 
+  .card:nth-child(2n+2) {
+    margin-left: 0;
+  }
   .card:nth-child(n+2) {
     margin-top: 30px;
   }
