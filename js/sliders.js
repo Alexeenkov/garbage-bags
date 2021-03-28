@@ -11,7 +11,7 @@ new Swiper('.slider', {
     // Отступ между слайдами
     spaceBetween: 11,
     breakpoints: {
-        610: {
+        615: {
             slidesPerView: 2,
             spaceBetween: 11,
         },
@@ -19,7 +19,7 @@ new Swiper('.slider', {
             slidesPerView: 4,
             spaceBetween: 19,
         },
-        1196: {
+        1217: {
             slidesPerView: 6,
             spaceBetween: 19,
         }

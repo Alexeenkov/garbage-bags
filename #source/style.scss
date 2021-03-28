@@ -428,6 +428,7 @@ body.lock {
         height: 26px;
         background-position: center;
         background-repeat: no-repeat;
+        background-size: contain;
         transition: all .3s ease;
         &:hover {
             transform: scale(1.1);
@@ -452,10 +453,14 @@ body.lock {
         background-image: url('../svg/twitter.svg');
     }
     &__favorites {
-        background-image: url('../svg/star.svg');
+        background-image: url('../img/favorites.jpg');
+        width: 28px;
+        height: 28px;
     }
     &__print {
         background-image: url('../svg/printer.svg');
+        width: 29px;
+        height: 29px;
     }
 }
 
@@ -797,11 +802,6 @@ body.lock {
             margin: 0 10px;
             font-weight: 900;
             text-align: center;
-            &::-webkit-outer-spin-button,
-            &::-webkit-inner-spin-button {
-                -webkit-appearance: none;
-                margin: 0;
-            }
             &:focus {
                 outline: none;
             }
