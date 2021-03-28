@@ -5,9 +5,10 @@
     font-style: normal
 }
 
-:root {
+
+/* :root {
     --swiper-theme-color: #ffffff
-}
+} */
 
 .swiper-container {
     margin-left: auto;
@@ -139,15 +140,16 @@
     scroll-snap-type: y mandatory
 }
 
-:root {
+
+/* :root {
     --swiper-navigation-size: 44px
-}
+} */
 
 .swiper-button-next,
 .swiper-button-prev {
     position: absolute;
     top: 55%;
-    width: calc(var(--swiper-navigation-size) / 44 * 27);
+    /* width: calc(var(--swiper-navigation-size) / 44 * 27); */
     height: var(--swiper-navigation-size);
     margin-top: calc(-1 * var(--swiper-navigation-size)/ 2);
     z-index: 10;
