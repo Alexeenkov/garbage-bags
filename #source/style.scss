@@ -823,7 +823,6 @@ body.lock {
     &__cards {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
     }
     &__card {
         width: 268px;
@@ -865,6 +864,10 @@ body.lock {
     border: 1px solid #148342;
     box-shadow: 0 4px 4px rgba($color: #000000, $alpha: 0.25);
     font-family: 'Roboto', 'Arial', sans-serif;
+    &:nth-child(3n+2) {
+        margin-left: 33px;
+        margin-right: 33px;
+    }
     &:nth-child(n+4) {
         margin-top: 30px;
     }
@@ -1188,7 +1191,7 @@ body.lock {
     }
 }
 
-@media (max-width: 1195px) {
+@media (max-width: 1217px) {
     .screen {
         max-height: 990px;
     }
@@ -1237,6 +1240,18 @@ body.lock {
             }
         }
     }
+    .card {
+        &:nth-child(3n+2) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        &:nth-child(2n+2) {
+            margin-left: 33px;
+        }
+        &:nth-child(n+3) {
+            margin-top: 30px;
+        }
+    }
     .wrapper {
         max-width: 900px;
     }
@@ -1246,11 +1261,6 @@ body.lock {
     .slider-wrapper {
         &_width {
             max-width: 850px;
-        }
-    }
-    .card {
-        &:nth-child(n+3) {
-            margin-top: 30px;
         }
     }
     .footer {
@@ -1394,7 +1404,7 @@ body.lock {
     }
 }
 
-@media (max-width: 610px) {
+@media (max-width: 615px) {
     .screen {
         min-height: 806px;
         &__container {
@@ -1629,8 +1639,13 @@ body.lock {
             }
         }
     }
-    .card:nth-child(n+2) {
-        margin-top: 30px;
+    .card {
+        &:nth-child(2n+2) {
+            margin-left: 0;
+        }
+        &:nth-child(n+2) {
+            margin-top: 30px;
+        }
     }
     .description {
         font-size: 14px;

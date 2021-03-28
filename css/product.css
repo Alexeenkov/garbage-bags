@@ -176,10 +176,6 @@
     margin-top: 24px;
 }
 
-.card:nth-child(4) {
-    margin-top: 0;
-}
-
 .main__name {
     font-family: 'Roboto', 'Arial', sans-serif;
     font-size: 36px;
@@ -244,17 +240,62 @@
     margin-top: 250px;
 }
 
-@media (max-width: 1195px) {
-    .card:nth-child(3) {
-        margin-top: 0;
+.card:nth-child(3n+2) {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.card:nth-child(4n+3) {
+    margin-right: 33px;
+}
+
+.card:nth-child(4n+2) {
+    margin-right: 33px;
+    margin-left: 33px;
+}
+
+.card:nth-child(4) {
+    margin-top: 0;
+}
+
+@media (max-width: 1217px) {
+    .card:nth-child(4n+3) {
+        margin-right: 0;
+    }
+    .card:nth-child(4n+2) {
+        margin-right: 0;
+        margin-left: 0;
     }
     .card:nth-child(4) {
         margin-top: 30px;
     }
+    .card:nth-child(3) {
+        margin-top: 0;
+    }
+    .card:nth-child(2n+2) {
+        margin-left: 0;
+    }
+    .card:nth-child(3n+2) {
+        margin-left: 33px;
+        margin-right: 33px;
+    }
 }
 
 @media (max-width: 920px) {
+    .card:nth-child(3n+2) {
+        margin-left: 0;
+        margin-right: 0;
+    }
     .card:nth-child(3) {
         margin-top: 30px;
+    }
+    .card:nth-child(2n+2) {
+        margin-left: 33px;
+    }
+}
+
+@media (max-width: 615px) {
+    .card:nth-child(2n+2) {
+        margin-left: 0;
     }
 }
