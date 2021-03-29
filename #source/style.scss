@@ -684,6 +684,11 @@ body._lock {
             & .price__content {
                 display: block;
             }
+            & a {
+                &::after {
+                    transform: translateY(-50%) rotate(180deg);
+                }
+            }
         }
     }
     &__range {

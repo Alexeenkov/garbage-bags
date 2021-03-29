@@ -637,6 +637,9 @@ body._lock {
 .filter__category._active .price__content {
   display: block;
 }
+.filter__category._active a::after {
+  transform: translateY(-50%) rotate(180deg);
+}
 .filter__range {
   position: relative;
   margin: 41px auto 0 auto;
